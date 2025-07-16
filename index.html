@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abarna Kangeyan | Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e9ecef);
+      color: #333;
+    }
+    header {
+      background: radial-gradient(circle at center, #3f3d56, #2c2b3c);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: #ffc107;
+      border-radius: 50%;
+      top: -50px;
+      right: -50px;
+      filter: blur(100px);
+    }
+    nav h1 {
+      font-size: 2.8rem;
+      font-family: 'Pacifico', cursive;
+      animation: glow 2s infinite alternate;
+      letter-spacing: 1px;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ffd700; }
+      to { text-shadow: 0 0 20px #ffc107; }
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      animation: fadeInDown 1s ease-out;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0.8;
+    }
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #ffc107;
+      display: block;
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .grid div, .project, ul li {
+      background: white;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .grid div:hover, .project:hover, ul li:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 2rem;
+    }
+    ul li {
+      margin-bottom: 1rem;
+    }
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-in">
+    <nav><h1>Abarna</h1></nav>
+    <div class="hero">
+      <h2>✨ Inventive ECE Student</h2>
+      <p>Exploring both IT & Electronics with Passion</p>
+    </div>
+  </header>
+
+  <section id="about" data-aos="zoom-in">
+    <h2>About Me</h2>
+    <p>I’m Abarna Kangeyan, an ECE student passionate about coding and IoT. I love solving real-world problems with tech.</p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div>IoT & Microcontrollers</div>
+      <div>HTML, CSS, JS</div>
+      <div>C, C++, Java, Python</div>
+      <div>Arduino, KiCad, GitHub</div>
+      <div>Canva, Photoshop, InShot</div>
+      <div>Tamil, English, Telugu</div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-right">
+    <h2>Projects</h2>
+    <div class="project">🔆 Solar Tracking System (2nd place Engineering Clinic)</div>
+    <div class="project">🌿 Plant Monitoring System (PCB + Moisture Sensor)</div>
+    <div class="project">🩺 Health Monitoring via ESP32 + Blynk</div>
+    <div class="project">💻 100 Days C Programming Practice</div>
+  </section>
+
+  <section id="certifications" data-aos="fade-left">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Python Zero to Hero – GUVI</li>
+      <li>Full Stack Bootcamp – NoviTech</li>
+      <li>Generative AI – IITM Research Park</li>
+      <li>Sustain-a-thon – Indian Oil</li>
+      <li>Void Hacks 6.0</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="zoom-in-up">
+    <h2>Contact</h2>
+    <p>📧 <a href="mailto:abarnakangeyan.kaha@gmail.com">abarnakangeyan.kaha@gmail.com</a></p>
+    <p>📱 +91 8526545680</p>
+    <p>
+      🔗 <a href="https://linkedin.com/in/abarna-kangeyan" target="_blank">LinkedIn</a>
+      | 💻 <a href="https://github.com/Abarna4" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Abarna Kangeyan | Portfolio with ✨ love</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+</body>
+</html>
