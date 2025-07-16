@@ -126,6 +126,23 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
+    .project {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .project-details {
+      display: none;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: left;
+    }
+
+    .project:hover .project-details {
+      display: block;
+    }
+
     ul {
       list-style: none;
       padding: 0;
@@ -177,10 +194,30 @@
 
   <section id="projects" data-aos="fade-right">
     <h2>Projects</h2>
-    <div class="project">🔆 Solar Tracking System (2nd place Engineering Clinic)</div>
-    <div class="project">🌿 Plant Monitoring System (PCB + Moisture Sensor)</div>
-    <div class="project">🩺 Health Monitoring via ESP32 + Blynk</div>
-    <div class="project">💻 100 Days C Programming Practice</div>
+    <div class="project">
+      🔆 Solar Tracking System (2nd place Engineering Clinic)
+      <div class="project-details">
+        This project uses an IoT-based system with LDR sensors to track the sun’s direction and adjust the solar panel accordingly. Real-time voltage is shown using Blynk, and a torch was used for testing. Achieved 2nd place in Engineering Clinic.
+      </div>
+    </div>
+    <div class="project">
+      🌿 Plant Monitoring System (PCB + Moisture Sensor)
+      <div class="project-details">
+        A smart plant watering system using a soil moisture sensor. If moisture is low, the system triggers an alert or LED. Designed on a custom PCB.
+      </div>
+    </div>
+    <div class="project">
+      🩺 Health Monitoring via ESP32 + Blynk
+      <div class="project-details">
+        A health tracking project with ESP32 and sensors (e.g., MAX30102, temperature sensor) connected to Blynk app for monitoring vitals.
+      </div>
+    </div>
+    <div class="project">
+      💻 100 Days C Programming Practice
+      <div class="project-details">
+        A self-driven challenge to consistently practice C programming daily for 100 days. Covered loops, arrays, strings, functions, pointers, and more.
+      </div>
+    </div>
   </section>
 
   <section id="certifications" data-aos="fade-left">
